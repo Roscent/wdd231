@@ -1,0 +1,74 @@
+/* General styling */
+body {
+    font-family: 'Courier New', Courier;
+    margin: 1%;
+    padding: 1px;
+    background-color: gainsboro;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    color: white;
+    padding: 5px 10px;
+    font-size: medium;
+}
+
+header img {
+    border-radius: 30%;
+    width: 100px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 1px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px 20px;
+}
+
+nav a {
+    text-decoration: solid;
+    color: black;
+}
+
+/* Responsive Navigation */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        display: list-item;
+        flex-direction: column;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: 1px;
+        font-size: medium;
+        color: blue;
+    }
+}
+
+/* Course Cards */
+.course-card {
+    border: 5px solid gold;
+    padding: 20px;
+    margin: 10px;
+}
+
+.completed {
+    background-color: chocolate;
+}
+
+.not-completed {
+    background-color: cornflowerblue;
+}
