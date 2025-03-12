@@ -1,0 +1,25 @@
+[
+    {
+        "familyName": "Ofuonye Dynasty",
+        "wardMovementDate": "29/10/2020",
+        "familyMembers": 3,
+        "visitedByBishopric?": "true",
+        "individualFamilyMembers": [
+            {
+                "name": "Gladys Ofuonye",
+                "gender": "female",
+                "birthdate": "1994-12-10"
+            },
+            {
+                "name": "Roscent Ofuonye",
+                "gender": "female",
+                "birthdate": "1995-04-28"
+            },
+            {
+                "name": "Valentina Ofuonye",
+                "gender": "female",
+                "birthdate": "1998-10-29"
+            }
+        ]
+    }
+]

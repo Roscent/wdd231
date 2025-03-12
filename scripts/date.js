@@ -1,4 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    document.getElementById("2025-03-12").textContent = new Date().getFullYear();
+    document.getElementById("2025-03-12").textContent = "2025-03-12: " + document.lastModified;
 });

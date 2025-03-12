@@ -1,0 +1,26 @@
+{
+    "prophets": [
+        {
+            "id": 1,
+            "name": "Joseph",
+            "lastname": "Smith",
+            "birthdate": "December 23, 1805",
+            "birthplace": "Sharon, Vermont, United States",
+            "death": "June 27, 1844",
+            "numofchildren": 11,
+            "length": 14,
+            "imageurl": "https://assets.churchofjesuschrist.org/ec/f8/ecf80a88e31429d0aa0eeec6e2c74851a4bf4235/nauvoo_temple_joseph_art_lds.jpeg"
+        },
+        {
+                "name": "Brigham",
+                "lastname": "Young",
+                "birthdate": "01 June 1801",
+                "death": "29 August 1877",
+                "length": 30,
+                "order": 2,
+                "birthplace": "Vermont",
+                "numofchildren": 56,
+                "imageurl": "Young"
+        }
+    ]
+}
