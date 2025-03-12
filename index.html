@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 231 Course Home Page">
-    <meta name="author" content="Roscent Nkemjika Ofuonye">
-    <title>Web Frontend - Course Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/navigation.js"></script>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/course.js"></script>
+    <meta name="author" content="ROSCENT NKEMJIKA OFUONYE">
+    <title>WDD 231 - Course Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1> FRONTEND DEVELOPMENT - WDD321</h1>
+        <img src="images/Roscent.jpg" alt="Profile Picture">
         <span>ROSCENT NKEMJIKA OFUONYE</span>
-        <button id="menu-toggle"></button>
-        <a href="https://www.byui.edu">BYU-Idaho</a>
-        <img src="images/Roscent.jpg" alt="Roscent image" width="300px">
     </header>
+
     <nav>
-        <ul id="nav-links">
+        <button id="menu-button">☰</button>
+        <ul id="menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">GitHub Profile</a></li>
@@ -32,26 +33,32 @@
 
     <main>
         <h1>Home</h1>
+
         <section>
-            <h2>About this course</h2>
-            <p>Brief description</p>
+            <h2>Welcome to WDD 231</h2>
+            <p>This page serves as a home for your course-related projects.</p>
         </section>
 
-        <section id="courses">
+        <section>
             <h2>Courses</h2>
-            <div id="course-buttons">
-                <button id="all">All Courses</button>
-                <button id="wdd">WDD Courses</button>
-                <button id="cse">CSE Courses</button>
+            <div id="course-filters">
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
             </div>
-            <div id="course-list"></div>
+            <div id="courses-container"></div>
             <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <section>
+            <h2>Additional Information</h2>
+            <p>More details about upcoming projects and assignments.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Roscent N. Ofuonye - Delta state, Nigeria.</p>
-        <p id="lastModified"></p>
+        <p>&copy; <span id="2025"></span> | ROSCENT NKEMJIKA OFUONYE | DELTA STATE, NIGERIA</p>
+        <p id="MARCH"></p>
     </footer>
 </body>
 </html>

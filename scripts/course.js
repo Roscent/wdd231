@@ -1,39 +1,41 @@
 const courses = [
-    { name: "WDD 230 - Web Frontend Development", code: "WDD230", credits: 3, completed: true },
-    { name: "WDD 231 - Web Frontend II", code: "WDD231", credits: 3, completed: false },
-    { name: "CSE 210 - Programming with Classes", code: "CSE210", credits: 3, completed: true },
-    { name: "CSE 222 - Data Structures", code: "CSE222", credits: 3, completed: false },
+    { name: "WDD 230 - Web Development", code: "WDD", credits: 3, completed: true },
+    { name: "WDD 231 - Frontend Development", code: "WDD", credits: 3, completed: false },
+    { name: "CSE 210 - Programming with Classes", code: "CSE", credits: 3, completed: true },
+    { name: "CSE 220 - Data Structures", code: "CSE", credits: 3, completed: false }
 ];
 
-const courseList = document.getElementById("course-list");
-const totalCredits = document.getElementById("total-credits");
+function displayCourses(filteredCourses) {
+    const courseContainer = document.getElementById("courses-container");
+    courseContainer.innerHTML = "";
 
-function displayCourses(filter = "all") {
-    courseList.innerHTML = "";
-    let filteredCourses = courses;
-
-    if (filter !== "all") {
-        filteredCourses = courses.filter(course => course.code.startsWith(filter.toUpperCase()));
-    }
-
-    let creditSum = 0;
+    let totalCredits = 0;
 
     filteredCourses.forEach(course => {
-        const div = document.createElement("div");
-        div.classList.add("course-card");
-        div.classList.add(course.completed ? "completed" : "not-completed");
-        div.innerHTML = `${course.name} - ${course.credits} Credits`;
-        courseList.appendChild(div);
-        creditSum += course.credits;
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+        if (course.completed) {
+            courseDiv.classList.add("completed");
+        }
+
+        courseDiv.innerHTML = `<strong>${course.name}</strong> - ${course.credits} Credits`;
+        courseContainer.appendChild(courseDiv);
+
+        totalCredits += course.credits;
     });
 
-    totalCredits.textContent = creditSum;
+    document.getElementById("total-credits").textContent = totalCredits;
 }
 
-// Event Listeners
-document.getElementById("all").addEventListener("click", () => displayCourses("all"));
-document.getElementById("wdd").addEventListener("click", () => displayCourses("WDD"));
-document.getElementById("cse").addEventListener("click", () => displayCourses("CSE"));
+function filterCourses(type) {
+    if (type === "all") {
+        displayCourses(courses);
+    } else {
+        const filtered = courses.filter(course => course.code === type);
+        displayCourses(filtered);
+    }
+}
 
-// Default display
-displayCourses();
+document.addEventListener("DOMContentLoaded", () => {
+    displayCourses(courses);
+});

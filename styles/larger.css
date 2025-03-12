@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .course {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .completed {
+        background-color: lightgreen;
+    }
+}

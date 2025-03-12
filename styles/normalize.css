@@ -1,0 +1,110 @@
+/* General styling */
+body {
+    font-family: 'Courier New', Courier;
+    margin: 1%;
+    padding: 1px;
+    background-color: gainsboro;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: gray;
+    color: white;
+    padding: 5px 10px;
+    font-size: medium;
+}
+
+header img {
+    border-radius: 30%;
+    width: 100px;
+}
+
+/* Navigation */
+nav {
+    background: goldenrod;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 1px;
+    list-style: none;
+    padding: 1px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px 20px;
+}
+
+nav a {
+    padding: 15px;
+    display: block;
+    text-decoration: solid;
+    color: black;
+}
+
+nav a.active {
+    background: white;
+    font-weight: bold;
+}
+
+/* Responsive Navigation or mobile menu */
+#menu-toggle {
+    display: none;
+    background: none;
+    font-size: larger;
+    color: aquamarine;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+/* Course Cards */
+.course-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Completed courses get a green background */
+.completed {
+    background-color: lightgreen;
+}
+
+/* Not completed courses get a red background */
+.not-completed {
+    background-color: lightcoral;
+}
