@@ -1,0 +1,18 @@
+[
+    {
+        "name": "City Coffee House",
+        "address": "123 Main St, Okpanam",
+        "phone": "2348023434617",
+        "website": "https://citycoffee.com",
+        "image": "images/coffeehouse.jpg",
+        "membership": 2
+    },
+    {
+        "name": "RoTech Solutions Inc.",
+        "address": "456 RoTech close, Okpanam",
+        "phone": "2348152915371",
+        "website": "https://rotechsolutions.com",
+        "image": "images/rotechsolutions.jpg",
+        "membership": 3
+    }
+]
