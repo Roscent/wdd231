@@ -3,10 +3,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     const gridViewBtn = document.getElementById("grid-view");
     const listViewBtn = document.getElementById("list-view");
 
+    let members = [];
+
     async function fetchMembers() {
         try {
             const response = await fetch("data/members.json");
-            const members = await response.json();
+            members = await response.json();
             displayMembers(members, "grid");
         } catch (error) {
             console.error("Error fetching member data:", error);
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function displayMembers(members, view) {
-        directory.innerHTML = ""; 
+        directory.innerHTML = "";
         directory.className = view;
 
         members.forEach(member => {

@@ -89,10 +89,10 @@ button:hover {
 
 .cta {
     position: absolute;
-    top: 50%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ff6600;
+    background-color: gray;
     color: white;
     padding: 10px 20px;
     text-decoration: none;

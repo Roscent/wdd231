@@ -14,5 +14,12 @@
         "website": "https://rotechsolutions.com",
         "image": "images/rotechsolutions.png",
         "membership": 3
+    },
+    {
+        "name": "Company Spotlight",
+        "image": "images/oyo.png"
+    },
+    {
+        "image": "images/biz.png"
     }
 ]
