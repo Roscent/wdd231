@@ -17,9 +17,16 @@
     },
     {
         "name": "Company Spotlight",
+        "address": "46 Amazing close, Oyo",
+        "phone": "2348035576557",
+        "website": "https://spotlight.com",
         "image": "images/oyo.png"
     },
     {
+        "name": "Biz Ideals",
+        "address": "6 Great street, Lagos",
+        "phone": "2348029191943",
+        "website": "https://bizideals.com",
         "image": "images/biz.png"
     }
 ]
