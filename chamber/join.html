@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | International Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="date.js" defer></script>
+    <style>
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem;
+        }
+
+        form {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .membership-cards {
+            flex: 1;
+            min-width: 300px;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .learn-more {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="International Chamber of Commerce Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="form-container">
+            <form id="joinForm" method="get" action="thankyou.html">
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                    autocomplete="given-name" required>
+
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                    required>
+
+                <label for="title">Organization Title</label>
+                <input type="text" id="title" name="title" title="Enter your organizational title"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                    placeholder="example@domain.com" required>
+
+                <label for="phone">Mobile Phone*</label>
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                    required>
+
+                <label for="businessName">Business/Organization Name*</label>
+                <input type="text" id="businessName" name="businessName"
+                    title="Enter your business or organization name" autocomplete="organization" required>
+
+                <label for="membership">Membership Level*</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Select a membership level</option>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description"
+                    title="Enter a description of your business or organization"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <div class="membership-cards">
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p>No fee</p>
+                    <p class="learn-more" onclick="openModal('npModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits</p>
+                    <p>$500/year</p>
+                    <p class="learn-more" onclick="openModal('bronzeModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits</p>
+                    <p>$1000/year</p>
+                    <p class="learn-more" onclick="openModal('silverModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits</p>
+                    <p>$2000/year</p>
+                    <p class="learn-more" onclick="openModal('goldModal')">Learn More</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('npModal')">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Listing in our online directory</li>
+                    <li>Access to member-only newsletters</li>
+                    <li>Invitation to annual networking event</li>
+                    <li>No fee for non-profit organizations</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP Membership benefits</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Business training workshops (2 per year)</li>
+                    <li>Basic listing in our printed directory</li>
+                    <li>Annual fee: $500</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silverModal')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>20% discount on chamber events</li>
+                    <li>Priority access to training workshops</li>
+                    <li>Featured listing in our printed directory</li>
+                    <li>Social media shoutouts (quarterly)</li>
+                    <li>Annual fee: $1000</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('goldModal')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>30% discount on chamber events</li>
+                    <li>VIP access to all training and networking</li>
+                    <li>Premium spotlight on homepage (rotating)</li>
+                    <li>Dedicated social media campaign (annual)</li>
+                    <li>Exclusive invitation to Gold Member events</li>
+                    <li>Annual fee: $2000</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="14-03-2025"></span> International Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Set timestamp when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            const now = new Date();
+            document.getElementById('timestamp').value = now.toISOString();
+        });
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

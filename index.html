@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/dialog.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -60,15 +61,18 @@
         <button id="menu-button">☰</button>
         <ul id="menu">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="chamber">Chamber</a></li>
+            <li><a href="github">GitHub Profile</a></li>
             <li><a href="#">LinkedIn</a></li>
         </ul>
     </nav>
 
     <main>
         <h1>Home</h1>
-
+        <dialog id="course-details">
+            <p>Additional information</p>
+            <button id="closeButton">Close</button>
+        </dialog>
         <section>
             <h2>Welcome to WDD 231</h2>
             <p>This page serves as a home for your course-related projects.</p>
