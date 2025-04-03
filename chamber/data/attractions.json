@@ -1,53 +1,53 @@
 {
     "attractions": [
         {
-            "name": "City Park",
-            "image": "images/city-park.webp",
-            "address": "100 Park Ave, Your Town",
-            "description": "A beautiful 50-acre park with walking trails, playgrounds, and picnic areas.",
-            "caption": "City Park Main Entrance"
+            "name": "Mariam Babangida leisure park",
+            "image": "images/Mariam Babangida leisure park.jpeg",
+            "address": "Anwai Road, Opposite Dennis Osadebay University, Asaba",
+            "description": "A beautiful 30-acre park with walking trails, playgrounds, and picnic areas.",
+            "caption": "Mariam Babangida leisure park pool side"
         },
         {
-            "name": "Historical Museum",
-            "image": "images/museum.webp",
-            "address": "200 History Lane, Your Town",
+            "name": "State Museum",
+            "image": "images/State Museum.jpeg",
+            "address": "National Museum Lagos",
             "description": "Explore our town's rich history through interactive exhibits and artifacts."
         },
         {
-            "name": "Downtown Plaza",
-            "image": "images/plaza.webp",
-            "address": "300 Main Street, Your Town",
-            "description": "The heart of our community with shops, restaurants, and seasonal events."
+            "name": "Emab Plaza",
+            "image": "images/Emab plaza.jpeg",
+            "address": "Emab plaza by inter-bau Asaba",
+            "description": "The heart of our community with variety of shops."
         },
         {
-            "name": "Riverwalk Trail",
-            "image": "images/riverwalk.webp",
-            "address": "400 Riverside Drive, Your Town",
-            "description": "Scenic 5-mile trail along the river, perfect for walking and biking."
+            "name": "Second Niger Bridge",
+            "image": "images/Second Niger Bridge.jpeg",
+            "address": "Second Niger Bridge betweeen Onitsha and Asaba cities",
+            "description": "Scenic trail along the river."
         },
         {
-            "name": "Community Arts Center",
-            "image": "images/arts-center.webp",
-            "address": "500 Creative Way, Your Town",
+            "name": "Glamour Art Gallery",
+            "image": "images/Art Gallery.jpeg",
+            "address": "Asaba Delta State",
             "description": "Hosting performances, art exhibits, and workshops for all ages."
         },
         {
-            "name": "Farmers Market",
-            "image": "images/farmers-market.webp",
-            "address": "600 Market Street, Your Town",
-            "description": "Fresh local produce and handmade goods every Saturday morning."
+            "name": "Asaba Market",
+            "image": "images/market.jpeg",
+            "address": "Ogbe-Ogonogo Market Asaba Town",
+            "description": "Fresh local produce and handmade goods every day."
         },
         {
-            "name": "Sports Complex",
-            "image": "images/sports-complex.webp",
-            "address": "700 Athletic Blvd, Your Town",
+            "name": "Stephen Keshi Stadium Asaba",
+            "image": "images/Stephen Keshi Stadium.jpeg",
+            "address": "Stephen Keshi Stadium Asaba, Delta State",
             "description": "State-of-the-art facilities for baseball, soccer, and community events."
         },
         {
-            "name": "Botanical Gardens",
-            "image": "images/gardens.webp",
-            "address": "800 Flora Road, Your Town",
-            "description": "20 acres of themed gardens showcasing native and exotic plants."
+            "name": "Botanical Garden",
+            "image": "images/Botanical Garden.jpeg",
+            "address": "Shorite mall, Asaba Delta state",
+            "description": "Themed garden showcasing exotic plants."
         }
     ]
 }
