@@ -1,0 +1,53 @@
+{
+    "attractions": [
+        {
+            "name": "City Park",
+            "image": "images/city-park.webp",
+            "address": "100 Park Ave, Your Town",
+            "description": "A beautiful 50-acre park with walking trails, playgrounds, and picnic areas.",
+            "caption": "City Park Main Entrance"
+        },
+        {
+            "name": "Historical Museum",
+            "image": "images/museum.webp",
+            "address": "200 History Lane, Your Town",
+            "description": "Explore our town's rich history through interactive exhibits and artifacts."
+        },
+        {
+            "name": "Downtown Plaza",
+            "image": "images/plaza.webp",
+            "address": "300 Main Street, Your Town",
+            "description": "The heart of our community with shops, restaurants, and seasonal events."
+        },
+        {
+            "name": "Riverwalk Trail",
+            "image": "images/riverwalk.webp",
+            "address": "400 Riverside Drive, Your Town",
+            "description": "Scenic 5-mile trail along the river, perfect for walking and biking."
+        },
+        {
+            "name": "Community Arts Center",
+            "image": "images/arts-center.webp",
+            "address": "500 Creative Way, Your Town",
+            "description": "Hosting performances, art exhibits, and workshops for all ages."
+        },
+        {
+            "name": "Farmers Market",
+            "image": "images/farmers-market.webp",
+            "address": "600 Market Street, Your Town",
+            "description": "Fresh local produce and handmade goods every Saturday morning."
+        },
+        {
+            "name": "Sports Complex",
+            "image": "images/sports-complex.webp",
+            "address": "700 Athletic Blvd, Your Town",
+            "description": "State-of-the-art facilities for baseball, soccer, and community events."
+        },
+        {
+            "name": "Botanical Gardens",
+            "image": "images/gardens.webp",
+            "address": "800 Flora Road, Your Town",
+            "description": "20 acres of themed gardens showcasing native and exotic plants."
+        }
+    ]
+}

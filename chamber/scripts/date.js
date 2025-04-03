@@ -1,8 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Update copyright year
-    document.getElementById("14-03-2025").textContent = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
 
-    // Update last modification date
-    const lastModified = document.lastModified;
-    document.getElementById("14-03-2025").textContent = `Last Modified: ${lastModified}`;
-});
+
+document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;

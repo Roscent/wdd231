@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Our Community | Your Chamber of Commerce</title>
+    <meta name="description" content="Discover the best attractions and features of our community through the Chamber of Commerce">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/little.css">
+    <link rel="stylesheet" href="styles/big.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Your Town Chamber of Commerce</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-main">
+        <div class="sidebar">
+            <div class="visitor-info">
+                <h2>Visitor Information</h2>
+                <p id="visit-message"></p>
+                <p>Population: 120,000</p>
+                <p>Median Age: 34</p>
+                <p>Median Income: #650,000</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <h2>Discover Our Community</h2>
+            <div class="cards" id="attractions-container">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Change this line in the footer -->
+<p>&copy; <span id="currentyear"></span> Your Town Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/date.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+
+</html>

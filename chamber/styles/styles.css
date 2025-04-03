@@ -118,7 +118,7 @@ button:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #444;
+        background-color: ;
     }
 
     nav ul.open {
@@ -128,7 +128,7 @@ button:hover {
     nav li {
         margin: 0;
         text-align: center;
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid wheat;
     }
 
     nav a {
@@ -150,7 +150,7 @@ nav li {
 }
 
 nav a {
-    color: green;
+    color: wheat;
     text-decoration: none;
     padding: 10px;
     display: block;

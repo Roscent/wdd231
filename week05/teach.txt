@@ -1,0 +1,390 @@
+Which of the following would be considered to be a JavaScript frontend library/framework?
+Group of answer choices
+
+React
+
+MySQL
+
+Python
+
+VS Code
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ React
+
+Explanation:
+React is a JavaScript frontend library used to build user interfaces, especially for single-page applications (SPAs).
+
+MySQL is a relational database management system (RDBMS), not a frontend framework.
+
+Python is a general-purpose programming language, not specific to frontend development.
+
+VS Code (Visual Studio Code) is a code editor, not a JavaScript frontend library or framework.
+
+
+
+Which of the following is a popular CSS framework?
+Group of answer choices
+
+Tailwind
+
+Jest
+
+Express
+
+CSS package manager
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ Tailwind
+
+Explanation:
+Tailwind is a popular CSS framework that provides utility-first classes to style web applications efficiently.
+
+Jest is a JavaScript testing framework, not a CSS framework.
+
+Express is a web framework for Node.js, used for building backend applications, not a CSS framework.
+
+CSS package manager is not a specific framework; it’s a general term that could refer to tools like npm or Yarn, which manage CSS libraries.
+
+
+Which of the following is NOT a given Experience Level filter value on LinkedIn jobs search?
+Group of answer choices
+
+Director
+
+Associate
+
+Advanced level
+
+Internship
+
+Entry level
+
+
+ChatGPT said:
+The correct answer is:
+
+❌ Advanced level
+
+Explanation:
+LinkedIn job search provides the following Experience Level filter values:
+
+Internship
+
+Entry level
+
+Associate
+
+Mid-Senior level
+
+Director
+
+Executive
+
+"Advanced level" is not a valid experience filter option on LinkedIn. Instead, LinkedIn uses "Mid-Senior level" for more experienced professionals.
+
+
+Which of the following is NOT a listed factor in creating an engaging LinkedIn profile?
+Group of answer choices
+
+Feature Your Work Experience
+
+Tell About Your Education
+
+Sell Yourself
+
+Improve Your Headline
+
+List Your Hobbies
+
+
+ChatGPT said:
+The correct answer is:
+
+❌ List Your Hobbies
+
+Explanation:
+An engaging LinkedIn profile typically includes:
+✅ Feature Your Work Experience – Showcasing relevant experience helps build credibility.
+✅ Tell About Your Education – Adding education details enhances your professional profile.
+✅ Sell Yourself – Highlighting your skills, achievements, and strengths makes your profile stand out.
+✅ Improve Your Headline – A strong headline captures attention and clearly defines your expertise.
+
+However, "List Your Hobbies" is not a major factor in creating an engaging LinkedIn profile. While hobbies might be included in the "Interests" section, they are not a key focus for professional networking.
+
+
+
+Which of the following is required to establish your GitHub Profile on your base GitHub repository?
+Group of answer choices
+
+A markdown file named README.md
+
+A standardized CSS file provided by GitHub.
+
+Setting your base GitHub repository to private.
+
+A resume .doc file uploaded to your base GitHub repo.
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ A markdown file named README.md
+
+Explanation:
+To establish your GitHub Profile, you need to create a special repository named after your GitHub username and include a README.md file in it. This file serves as your profile's main content and can include text, images, links, and other markdown formatting.
+
+Here’s why the other options are incorrect:
+❌ A standardized CSS file provided by GitHub – GitHub does not provide a required CSS file for profile setup.
+❌ Setting your base GitHub repository to private – Your profile repository must be public for others to see it.
+❌ A resume .doc file uploaded to your base GitHub repo – While you can upload a resume, it’s not required to establish your profile.
+
+Steps to create your GitHub Profile:
+Create a new repository named exactly as your GitHub username.
+
+Ensure it is public (not private).
+
+Add a README.md file with content about yourself.
+
+Commit and push the changes.
+
+Once done, the content in README.md will appear on your GitHub profile page! 🚀
+
+
+Using Markdown, the lightweight markup language, make the following text Software Development have a strong emphasis (bold).
+Be sure to only include what is necessary to make the given Software Development bold in Markdown. The case must match to get this right.
+
+
+ChatGPT said:
+**Software Development**
+
+
+In Markdown, which of the following creates an inline link to https://byui.edu with BYU-Idaho as the clickable text?
+Group of answer choices
+
+?{https://byui.edu}:BYU-Idaho
+
+-BYU-Idaho-{https://byui.edu}
+
+https://byui.edu{BYU-Idaho}
+
+[BYU-Idaho](https://byui.edu)
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ [BYU-Idaho](https://byui.edu)
+
+Explanation:
+In Markdown, the syntax for creating an inline link is:
+
+markdown
+Copy code
+[Clickable Text](URL)
+So, for BYU-Idaho as the clickable text linking to https://byui.edu, the correct format is:
+
+markdown
+Copy code
+[BYU-Idaho](https://byui.edu)
+Why the other options are incorrect:
+❌ ?{https://byui.edu}:BYU-Idaho – Incorrect syntax, not valid Markdown.
+❌ -BYU-Idaho-{https://byui.edu} – Incorrect formatting for a link.
+❌ `https://byui.edu`{BYU-Idaho} – Incorrect use of backticks and curly braces.
+
+✅ The correct Markdown format is:
+[BYU-Idaho](https://byui.edu) 🎯
+
+
+Most HTML tags can be used in Markdown. However, which of the following HTML tags does GitHub markdown filter out / not support?
+Group of answer choices
+
+img
+
+a
+
+iframe
+
+button
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ iframe
+
+Explanation:
+GitHub filters out or does not support certain HTML tags in Markdown for security reasons, including:
+
+<iframe> – This tag is commonly used for embedding external content (e.g., videos, other web pages), but GitHub blocks it to prevent security risks like clickjacking.
+
+Why the other options are supported:
+✅ <img> – Images can be embedded using both Markdown syntax and the <img> tag.
+✅ <a> – Anchor (<a>) tags for links are fully supported in GitHub Markdown.
+✅ <button> – While it can be used, it won’t function as an interactive button in GitHub Markdown since JavaScript is not supported.
+
+So, GitHub filters out <iframe>, making it the correct answer. 🚀
+
+
+Which of the following factors is NOT typically considered when optimizing page performance?
+Group of answer choices
+
+Font size and font family
+
+Image compression
+
+Page load time
+
+Number of JavaScript libraries used
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ Font size and font family
+
+Explanation:
+When optimizing page performance, the following factors are important:
+
+✅ Image compression – Reducing image file sizes helps improve load speed.
+
+✅ Page load time – A key performance metric; reducing it enhances user experience.
+
+✅ Number of JavaScript libraries used – Too many libraries can increase page load time and slow down performance.
+
+However, font size and font family generally do not have a significant impact on performance. They affect readability and design, but unless large custom fonts are loaded inefficiently, they are not a major factor in performance optimization. 🚀
+
+
+
+
+What does the term "first contentful paint" (FCP) measure in relation to page performance?
+Group of answer choices
+
+The time is taken to render the headings and form elements (if any) on the page.
+
+The time taken to render the first bit of content from the DOM (Document Object Model) onto the screen.
+
+The time it takes for images to load onto the screen.
+
+The time is takes for the first image to start to render onto the screen..
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ The time taken to render the first bit of content from the DOM (Document Object Model) onto the screen.
+
+Explanation:
+First Contentful Paint (FCP) is a key web performance metric that measures:
+
+How long it takes for the browser to render the first visible content from the DOM (such as text, images, SVGs, or non-white <canvas> elements).
+
+It indicates when users first see something appear on the screen, helping gauge perceived load speed.
+
+Why the other options are incorrect:
+❌ "The time taken to render the headings and form elements (if any) on the page."
+
+FCP measures any first visible content, not just headings or forms.
+
+❌ "The time it takes for images to load onto the screen."
+
+FCP is not specific to images; it applies to any content appearing first.
+
+❌ "The time it takes for the first image to start to render onto the screen."
+
+While images can contribute to FCP, it is not limited to them. Any DOM content counts.
+
+Summary:
+First Contentful Paint (FCP) measures when the first piece of visible content appears on a webpage, providing insight into perceived loading speed. 🚀
+
+
+What is the purpose of lazy loading images on a web page?
+Group of answer choices
+
+To asynchronously load images from a content delivery network (CDN)
+
+To defer the loading of non-essential images until after the initial page load
+
+To reduce the file size of images by compressing them
+
+To preload images in anticipation of user interaction
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ To defer the loading of non-essential images until after the initial page load
+
+Explanation:
+Lazy loading is a technique that delays loading images (or other resources) until they are actually needed. Typically, this means deferring the loading of images that are below the fold (not immediately visible to the user) until the user scrolls down and the images come into view. This improves page load times and performance, especially for image-heavy pages.
+
+Why the other options are incorrect:
+❌ "To asynchronously load images from a content delivery network (CDN)"
+
+While lazy loading may involve loading images from a CDN, its primary purpose is to defer the loading of images, not to load them asynchronously from a CDN specifically.
+
+❌ "To reduce the file size of images by compressing them"
+
+Image compression is a separate optimization technique, not part of lazy loading. Lazy loading deals with when images are loaded, not their size.
+
+❌ "To preload images in anticipation of user interaction"
+
+Preloading is the opposite of lazy loading. Preloading involves loading resources ahead of time, while lazy loading delays them.
+
+Summary:
+The purpose of lazy loading is to defer loading non-essential images until the user needs them, optimizing page load times and reducing unnecessary network requests. 🚀
+
+
+
+In an effort to reduce the complexity of CSS selectors in order to reduce the scope and complexity of style calculations to increase page performance, one of the simplest methods change a selector like this
+
+ul li:nth-last-child(-n+1) .title { /* style declarations */}
+to which of the following?
+
+
+Group of answer choices
+
+an id
+
+a JavaScript function
+
+a semantic HTML element
+
+a class
+
+
+ChatGPT said:
+The correct answer is:
+
+✅ a class
+
+Explanation:
+The CSS selector in the example:
+
+css
+Copy code
+ul li:nth-last-child(-n+1) .title { /* style declarations */}
+is quite complex because it selects the .title class inside the last <li> element of a <ul>. To simplify this and reduce the complexity, one effective approach is to change the selector to target a class directly. By using a more specific class (rather than relying on complex pseudo-classes and structure-based selectors), you reduce the need for the browser to calculate complex selectors.
+
+For example, you might add a class like last-title to the last <li> in your HTML, so the selector becomes:
+
+css
+Copy code
+.last-title .title { /* style declarations */}
+This is simpler and more efficient for the browser to compute.
+
+Why the other options are incorrect:
+❌ An ID – Using an ID would still be a form of targeting a specific element, but it's not necessarily simpler than a class, especially if the ID is applied to specific elements in your markup. Also, IDs are unique, which may not suit all cases where you need to target multiple elements.
+
+❌ A JavaScript function – JavaScript functions are not a direct solution to simplifying CSS selectors. While JavaScript can dynamically manipulate elements, it doesn't help reduce the complexity of the CSS selector itself.
+
+❌ A semantic HTML element – While using semantic HTML elements (like <article>, <section>, etc.) can improve accessibility and structure, it doesn't directly address simplifying CSS selectors in terms of performance.
+
+Summary:
+The simplest way to reduce the complexity of CSS selectors is to use a class, which provides a more straightforward and performant way to target elements for styling. 🚀
