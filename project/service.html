@@ -12,12 +12,156 @@
     <meta property="og:url" content="https://Roscent.github.io/project/home.html">
     <meta property="og:type" content="website">
     <title>CENTKEM ENTERPRISE</title>
-    <link rel="stylesheet" href="styles/mine.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
     <header>
-
+        <img src="images/service.png" alt="service">
+        <nav>
+            <a href="home.html" class="active">Home</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="collaboration.html">Collaborations</a>
+        </nav>
     </header>
+    <main>
+        <h1>THE SERVICES WE RENDER</h1>
+
+        <div class="services-container">
+            <div class="services-cards">
+                <div class="card">
+                    <h3>🔨 Furniture Manufacturing & Production</h3>
+                    <p>Custom and mass production of high-quality furniture pieces.</p>
+                    <p class="learn-more" onclick="openModal('m/pModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛋️ Furniture Sales & Retail</h3>
+                    <p>In-store and online sales of our premium furniture collections.</p>
+                    <p class="learn-more" onclick="openModal('s/rModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>🧑‍🎨 Design Services</h3>
+                    <p>Professional interior design and space planning solutions.</p>
+                    <p class="learn-more" onclick="openModal('dsModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚚 Logistics & Delivery</h3>
+                    <p>Reliable delivery services for your furniture purchases.</p>
+                    <p class="learn-more" onclick="openModal('l/dModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>🛠️ Installation & Assembly</h3>
+                    <p>Expert assembly and installation of your furniture.</p>
+                    <p class="learn-more" onclick="openModal('i/aModal')">Learn More</p>
+                </div>
+
+                <div class="card">
+                    <h3>🧽 Maintenance & Repair</h3>
+                    <p>Professional care and restoration for your furniture.</p>
+                    <p class="learn-more" onclick="openModal('m/rModal')">Learn More</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="m/pModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('m/pModal')">&times;</span>
+                <h2>🔨 Furniture Manufacturing & Production</h2>
+                <ul>
+                    <li>Custom furniture design & production</li>
+                    <li>Mass production of furniture pieces</li>
+                    <li>Prototyping and sample creation</li>
+                    <li>CNC routing and laser cutting</li>
+                    <li>Upholstery and reupholstery services</li>
+                    <li>Furniture finishing (painting, staining, etc.)</li>
+                    <li>Cabinet making and millwork</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="s/rModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('s/rModal')">&times;</span>
+                <h2>🛋️ Furniture Sales & Retail</h2>
+                <ul>
+                    <li>In-store retail sales</li>
+                    <li>Online furniture sales (eCommerce)</li>
+                    <li>Virtual showroom tours</li>
+                    <li>Product catalog management</li>
+                    <li>Home staging furniture sales</li>
+                    <li>Outlet/clearance centers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="dsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('dsModal')">&times;</span>
+                <h2>🧑‍🎨 Design Services</h2>
+                <ul>
+                    <li>Interior design consultation</li>
+                    <li>Space planning & layout services</li>
+                    <li>3D modeling and visualization</li>
+                    <li>Color matching and material selection</li>
+                    <li>Ergonomic furniture planning</li>
+                    <li>Style consultations (modern, rustic, etc.)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="l/dModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('l/dModal')">&times;</span>
+                <h2>🚚 Logistics & Delivery</h2>
+                <ul>
+                    <li>Home delivery and setup</li>
+                    <li>International shipping</li>
+                    <li>Warehousing and inventory management</li>
+                    <li>Same-day or scheduled delivery</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="i/aModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('i/aModal')">&times;</span>
+                <h2>🛠️ Installation & Assembly</h2>
+                <ul>
+                    <li>Furniture assembly</li>
+                    <li>Built-in furniture installation</li>
+                    <li>Office/Workstation setup</li>
+                    <li>Wall mounting (shelves, TVs, etc.)</li>
+                    <li>Disassembly and relocation support</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="m/rModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('m/rModal')">&times;</span>
+                <h2>🧽 Maintenance & Repair</h2>
+                <ul>
+                    <li>Furniture repair (wood, metal, fabric, etc.)</li>
+                    <li>Refinishing and restoration</li>
+                    <li>Reupholstery and cushion replacement</li>
+                    <li>Warranty and after-sales service</li>
+                    <li>Protective treatments (waterproofing, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> CENTKEM ENTERPRISE </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
