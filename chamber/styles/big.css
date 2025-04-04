@@ -13,6 +13,10 @@
     border-radius: 8px;
 }
 
+img {
+    width: 200px;
+}
+
 .gallery {
     display: grid;
     grid-template-areas:
