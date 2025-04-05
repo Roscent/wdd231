@@ -16,11 +16,12 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/modal.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="images/collaborate.png" alt="col">
-        <img src="images/collaborate2.png" alt="coll">
-        <img src="images/collaborate3.png" alt="collabo">
+        <img src="images/collaborate.png" alt="Collaboration image 1">
+        <img src="images/collaborate2.png" alt="Collaboration image 2">
+        <img src="images/collaborate3.png" alt="Collaboration image 3">
     </header>
     <nav>
         <a href="home.html">Home</a>
@@ -30,33 +31,34 @@
     </nav>
     <main>
         <h1>Join the Train</h1>
-        <p>Let’s Work Together for a Greener Future!</p>
-        
+        <p>Let's Work Together for a Greener Future!</p>
+
         <div class="form-container">
             <form id="joinForm" method="get" action="thankyou.html">
                 <label for="firstName">First Name*</label>
-                <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
-                    required>
-        
+                <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                    autocomplete="given-name" required>
+
                 <label for="lastName">Last Name*</label>
                 <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
                     required>
-        
+
                 <label for="title">Organization Title</label>
                 <input type="text" id="title" name="title" title="Enter your organizational title"
                     autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
-        
+
                 <label for="email">Email*</label>
                 <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
                     placeholder="example@domain.com" required>
-        
+
                 <label for="phone">Mobile Phone*</label>
-                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
-        
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                    required>
+
                 <label for="businessName">Business/Organization Name*</label>
-                <input type="text" id="businessName" name="businessName" title="Enter your business or organization name"
-                    autocomplete="organization" required>
-        
+                <input type="text" id="businessName" name="businessName"
+                    title="Enter your business or organization name" autocomplete="organization" required>
+
                 <label for="membership">Membership Level*</label>
                 <select id="membership" name="membership" required>
                     <option value="">Select a membership level</option>
@@ -65,16 +67,16 @@
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                 </select>
-        
+
                 <label for="description">Business/Organization Description</label>
                 <textarea id="description" name="description"
                     title="Enter a description of your business or organization"></textarea>
-        
+
                 <input type="hidden" id="timestamp" name="timestamp">
-        
+
                 <button type="submit">Submit Application</button>
             </form>
-        
+
             <div class="membership-cards">
                 <div class="card">
                     <h3>NP Membership</h3>
@@ -82,21 +84,21 @@
                     <p>No fee</p>
                     <p class="learn-more" onclick="openModal('npModal')">Learn More</p>
                 </div>
-        
+
                 <div class="card">
                     <h3>Bronze Membership</h3>
                     <p>Basic benefits</p>
                     <p>$500/year</p>
                     <p class="learn-more" onclick="openModal('bronzeModal')">Learn More</p>
                 </div>
-        
+
                 <div class="card">
                     <h3>Silver Membership</h3>
                     <p>Enhanced benefits</p>
                     <p>$1000/year</p>
                     <p class="learn-more" onclick="openModal('silverModal')">Learn More</p>
                 </div>
-        
+
                 <div class="card">
                     <h3>Gold Membership</h3>
                     <p>Premium benefits</p>
@@ -105,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <!-- Modals -->
+        
         <div id="npModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('npModal')">&times;</span>
@@ -118,7 +120,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div id="bronzeModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
@@ -132,7 +134,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div id="silverModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('silverModal')">&times;</span>
@@ -147,7 +149,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div id="goldModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal('goldModal')">&times;</span>
@@ -169,3 +171,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
+</html>
