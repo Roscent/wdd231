@@ -8,20 +8,6 @@ body {
 header img {
     width: 250px;
     border-radius: 33%;
-    justify-content: space-around;
-}
-
-nav {
-    background-color: white;
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    color: black;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
 }
 
 header {
@@ -31,6 +17,23 @@ header {
     font-size: xx-large;
     font-weight: bolder;
     justify-content: space-around;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 h1 {
@@ -43,16 +46,19 @@ h1 {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem;
+    justify-content: center;
 }
 
 form {
     flex: 1;
     min-width: 300px;
+    max-width: 500px;
 }
 
 .membership-cards {
     flex: 1;
     min-width: 300px;
+    max-width: 500px;
     display: grid;
     gap: 1rem;
 }
@@ -61,25 +67,30 @@ form {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 0.5s forwards;
 }
 
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .card:nth-child(1) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 
 .card:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 
 .card:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 .card:nth-child(4) {
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 
 @keyframes fadeIn {
@@ -102,12 +113,13 @@ form {
 }
 
 .modal-content {
-    background-color: black;
+    background-color: #333;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 600px;
+    border-radius: 5px;
 }
 
 .close {
@@ -118,43 +130,57 @@ form {
     cursor: pointer;
 }
 
+.close:hover {
+    color: white;
+}
+
 label {
     display: block;
     margin: 1rem 0 0.5rem;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
 
 button[type="submit"] {
-    background-color: #333;
+    background-color: #555;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
+    border-radius: 3px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #555;
+    background-color: #777;
 }
 
 .learn-more {
     color: gold;
     text-decoration: underline;
     cursor: pointer;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.learn-more:hover {
+    color: goldenrod;
 }
 
 footer {
-    box-sizing: 12%;
+    padding: 1rem;
     background-color: #333;
     color: white;
-    padding: 15px;
     margin-top: 20px;
     border-style: dotted;
     text-align: center;
-    justify-content: space-around;
 }
