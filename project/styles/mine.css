@@ -46,6 +46,11 @@ p {
     font-family: 'Lucida Sans';
 }
 
+.contact img{
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: white;
