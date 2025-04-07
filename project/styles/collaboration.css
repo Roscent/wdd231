@@ -1,9 +1,10 @@
 body {
     font-family: 'Times New Roman', serif;
     margin: 1%;
-    background-color: rgb(63, 63, 106);
-    color: antiquewhite;
+    background-color: white;
+    color: black;
 }
+
 
 header img {
     width: 250px;
@@ -17,10 +18,11 @@ header {
     font-size: xx-large;
     font-weight: bolder;
     justify-content: space-around;
+    background-color: gainsboro;
 }
 
 nav {
-    background-color: white;
+    background-color: gray;
     display: flex;
     padding: 10px;
     justify-content: space-around;
@@ -113,7 +115,7 @@ form {
 }
 
 .modal-content {
-    background-color: #333;
+    background-color: wheat;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -165,7 +167,7 @@ button[type="submit"]:hover {
 }
 
 .learn-more {
-    color: gold;
+    color: blue;
     text-decoration: underline;
     cursor: pointer;
     display: inline-block;
@@ -173,7 +175,7 @@ button[type="submit"]:hover {
 }
 
 .learn-more:hover {
-    color: goldenrod;
+    color: blue;
 }
 
 footer {
