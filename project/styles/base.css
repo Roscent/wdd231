@@ -52,6 +52,12 @@ nav a.active {
     transition: color 0.3s;
 }
 
+h1,
+h2,
+h3 {
+    font: message-box;
+}
+
 .close:hover {
     color: #333;
 }
