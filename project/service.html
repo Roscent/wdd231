@@ -13,13 +13,14 @@
     <meta property="og:type" content="website">
     <title>CENTKEM ENTERPRISE SERVICE</title>
     <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/modal.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/service.png" alt="Our Services">
+        <img src="images/service.png" alt="Our Services" loading="lazy">
         <nav>
             <a href="home.html">Home</a>
             <a href="service.html" class="active">Services</a>
@@ -35,26 +36,26 @@
                 <div class="card">
                     <h3>🔨 Furniture Manufacturing & Production</h3>
                     <p>Custom and mass production of high-quality furniture pieces.</p>
-                    <p class="learn-more" onclick="openModal('m/pModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('mpModal')">Learn More</p>
                 </div>
 
                 <div class="card">
                     <h3>Agriculture Primary Production Services</h3>
                     <p>Crop Farming, Livestock Farming, Agroforestry, Organic Farming.</p>
-                    <p class="learn-more" onclick="openModal('p/pModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('ppModal')">Learn More</p>
                 </div>
 
                 <div class="card">
                     <h3>🛋️ Furniture Sales & Retail</h3>
                     <p>In-store and online sales of our premium furniture collections.</p>
-                    <p class="learn-more" onclick="openModal('s/rModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('srModal')">Learn More</p>
                 </div>
 
                 <div class="card">
                     <h3>Agricultural Input Supply & Support Services</h3>
                     <p>Seed & Seedling Supply, Fertilizers & Soil Amendments, Pesticides & Herbicides, Farm Machinery &
                         Equipment Rental, Animal Feed & Nutrition</p>
-                    <p class="learn-more" onclick="openModal('s/sModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('ssModal')">Learn More</p>
                 </div>
 
                 <div class="card">
@@ -73,7 +74,7 @@
                 <div class="card">
                     <h3>🚚 Furniture Logistics & Delivery</h3>
                     <p>Reliable delivery services for your furniture purchases.</p>
-                    <p class="learn-more" onclick="openModal('l/dModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('ldModal')">Learn More</p>
                 </div>
 
                 <div class="card">
@@ -85,7 +86,7 @@
                 <div class="card">
                     <h3>🛠️ Furniture Installation & Assembly</h3>
                     <p>Expert assembly and installation of your furniture.</p>
-                    <p class="learn-more" onclick="openModal('i/aModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('iaModal')">Learn More</p>
                 </div>
 
                 <div class="card">
@@ -98,7 +99,7 @@
                 <div class="card">
                     <h3>🧽 Furniture Maintenance & Repair</h3>
                     <p>Professional care and restoration for your furniture.</p>
-                    <p class="learn-more" onclick="openModal('m/rModal')">Learn More</p>
+                    <p class="learn-more" onclick="openModal('mrModal')">Learn More</p>
                 </div>
 
                 <div class="card">
@@ -111,9 +112,9 @@
         </div>
 
         <!-- Modals -->
-        <div id="m/pModal" class="modal">
+        <div id="mpModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('m/pModal')">&times;</span>
+                <span class="close" onclick="closeModal('mpModal')">&times;</span>
                 <h2>🔨 Furniture Manufacturing & Production</h2>
                 <ul>
                     <li>Custom furniture design & production</li>
@@ -127,9 +128,9 @@
             </div>
         </div>
 
-        <div id="p/pModal" class="modal">
+        <div id="ppModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('p/pModal')">&times;</span>
+                <span class="close" onclick="closeModal('ppModal')">&times;</span>
                 <h2>Agriculture Primary Production Services</h2>
                 <ul>
                     <li>Growing grains, vegetables, fruits, oilseeds, etc</li>
@@ -140,9 +141,9 @@
             </div>
         </div>
 
-        <div id="s/rModal" class="modal">
+        <div id="srModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('s/rModal')">&times;</span>
+                <span class="close" onclick="closeModal('srModal')">&times;</span>
                 <h2>🛋️ Furniture Sales & Retail</h2>
                 <ul>
                     <li>In-store retail sales</li>
@@ -155,9 +156,9 @@
             </div>
         </div>
 
-        <div id="s/sModal" class="modal">
+        <div id="ssModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('s/sModal')">&times;</span>
+                <span class="close" onclick="closeModal('ssModal')">&times;</span>
                 <h2>Agricultural Input Supply & Support Services</h2>
                 <ul>
                     <li>High-quality, hybrid, or genetically modified seeds.</li>
@@ -197,9 +198,9 @@
             </div>
         </div>
 
-        <div id="l/dModal" class="modal">
+        <div id="ldModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('l/dModal')">&times;</span>
+                <span class="close" onclick="closeModal('ldModal')">&times;</span>
                 <h2>🚚 Furniture Logistics & Delivery</h2>
                 <ul>
                     <li>Home delivery and setup</li>
@@ -223,9 +224,9 @@
             </div>
         </div>
 
-        <div id="i/aModal" class="modal">
+        <div id="iaModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('i/aModal')">&times;</span>
+                <span class="close" onclick="closeModal('iaModal')">&times;</span>
                 <h2>🛠️ Furniture Installation & Assembly</h2>
                 <ul>
                     <li>Furniture assembly</li>
@@ -250,9 +251,9 @@
             </div>
         </div>
 
-        <div id="m/rModal" class="modal">
+        <div id="mrModal" class="modal">
             <div class="modal-content">
-                <span class="close" onclick="closeModal('m/rModal')">&times;</span>
+                <span class="close" onclick="closeModal('mrModal')">&times;</span>
                 <h2>🧽 Furniture Maintenance & Repair</h2>
                 <ul>
                     <li>Furniture repair (wood, metal, fabric, etc.)</li>
